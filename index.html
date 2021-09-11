@@ -5,7 +5,7 @@ const log = console.log;
 var userName=readlineSync.question((chalk.underline.white ("Hey what is your name? ",)));
 log(   "hiee "+ chalk.keyword("orange")(userName ) +"lets start the quiz" );
 log("here are few insructions before you proceed ")
-log(" 1) 1 round 4 quesions")
+log(" 1) 1 round  5 quesions")
 log(" 2) Each queston carries 2 marks and here is no negative marking if you answer wrong")
 log(" 3) do not google")
 //array of quesions 
@@ -22,9 +22,14 @@ var question =[{
   answer:"2"
 },
 {
-  question:"As of 2020, which is the only Bollywood movie to win 13 Filmfare Awards? \n Uri: The Surgical Strike\n 2 Article 15 \n 3 Saand Ki Aankh \n 4 Gully Boy \n" ,
+  question:"As of 2020, which is the only Bollywood movie to win 13 Filmfare Awards? \n 1 Uri: The Surgical Strike\n 2 Article 15 \n 3 Saand Ki Aankh \n 4 Gully Boy \n" ,
   answer:"4"
-}
+},
+{
+  question:"This film launched Amitabh Bachchan as the 'angry young man' of Bollywood.? \n 1 sholay \n 2 Deevae \n 3 zanjeer \n 4 Gully Boy \n" ,
+  answer:"3"
+},
+
 ]
 function quiz(question,answer){
 var userAnswer=readlineSync.question(question);
@@ -54,12 +59,12 @@ for (i=0;i<question.length;i++){
 var highScores=[
   {
     name:"suti",
-    score:"8"
+    score:"10"
 
   },
   {
     name:"Sk",
-    score:"6"
+    score:"8"
   }
 ]
 function  showScores(){
